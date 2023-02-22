@@ -10,17 +10,11 @@ const Navbar = () => {
         </NavLink>
         <div className="space-x-4">
           <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              isActive ? "border-teal-300 border-solid border-b-4 pb-2" : "text-white/70"
-            }
-          >
-            About
-          </NavLink>
-          <NavLink
             to="/contact"
             className={({ isActive }) =>
-              isActive ? "border-teal-300 border-solid border-b-4 pb-2" : "text-white/70"
+              isActive
+                ? "border-teal-300 border-solid border-b-4 pb-2"
+                : "text-white/70"
             }
           >
             Contact
