@@ -7,7 +7,7 @@ const University = () => {
         <h1 className="font-semibold text-3xl md:text-5xl">
           University Admissions Coaching
         </h1>
-        <img src={College} />
+        <img src={College} alt="" />
         <p>
           US colleges and universities want international students on their
           campuses. International students enrich college communities and

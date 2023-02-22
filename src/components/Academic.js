@@ -7,7 +7,7 @@ const Academic = () => {
         <h1 className="font-semibold text-3xl md:text-5xl">
           Academic Writing Preparation
         </h1>
-        <img src={Essay} />
+        <img src={Essay} alt="" />
         <p>
           Research shows how important strong English skills are for college
           students. Low levels in English are connected to poor academic
