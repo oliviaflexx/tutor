@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Academic from "./Academic";
+import Contact from "./Contact";
 import Home from "./Home";
 import Navbar from "./Navbar";
 import University from "./University";
@@ -20,7 +21,7 @@ const ReactRouterSetup = () => {
           element={<Academic />}
         ></Route>
         <Route path="/english-language-tutoring" element={<div></div>}></Route>
-        <Route path="/contact" element={<div>Contact</div>}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
         <Route path="*" element={<div> doesn't exist</div>}></Route>
       </Routes>
       <div className="bg-cyan-600 text-white text-center text-sm py-6">

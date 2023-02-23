@@ -7,6 +7,12 @@ import {
 import ProfileImage from "./profile.jpeg";
 
 const Home = () => {
+  const handleClickScroll = () => {
+    const element = document.getElementById("michelle");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section className="bg-cyan-600">
@@ -28,12 +34,12 @@ const Home = () => {
                 Are you overwhelmed by the admissions process? Is your English
                 strong enough for college level work in the US?
               </p>
-              <NavLink
+              <button
                 className="mx-auto md:mx-0 w-fit font-semibold px-8 py-2 rounded-full bg-white/10 shadow-sm shadow-cyan-700 border-2 border-white/10"
-                to="/contact"
+                onClick={handleClickScroll}
               >
                 Get Help
-              </NavLink>
+              </button>
             </div>
           </div>
           <div className="lg:px-20 md:px-10 pb-16 mt-16 grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
@@ -61,8 +67,8 @@ const Home = () => {
           </div>
         </div>
         <div className="bg-white h-60 -mt-[12rem] hidden lg:block md:px-10 lg:px-20"></div>
-        <div className="bg-white pt-10 lg:pt-0">
-          <h2 className="font-bold text-4xl md:text-5xl text-center mb-4 text-slate-900">
+        <div className="bg-white pt-10 lg:pt-0" id="michelle">
+          <h2 className="font-bold text-4xl md :text-5xl text-center mb-4 text-slate-900">
             Hi, I'm Michelle...
           </h2>
           <div className="grid grid-cols-1 p-4 md:px-10 lg:px-20 md:grid-cols-3 gap-4">
@@ -105,6 +111,12 @@ const Home = () => {
                 university in the US is one of your dreams, contact me today so
                 that we can turn that dream into a reality.
               </p>
+              <NavLink
+                className="text-white mx-auto md:mx-0 w-fit font-semibold px-8 py-2 rounded-full bg-cyan-500 shadow-sm shadow-cyan-900"
+                to="/contact"
+              >
+                Contact
+              </NavLink>
             </div>
           </div>
         </div>
